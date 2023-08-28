@@ -64,7 +64,6 @@ export const deletingRooms = async (req, res) => {
 
 }
 
-
 export const updatingRooms = async (req, res) => {
     const { id } = req.params
     const { name, valor1 } = req.body 

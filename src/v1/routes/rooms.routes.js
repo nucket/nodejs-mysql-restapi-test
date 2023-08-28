@@ -1,8 +1,7 @@
 import { Router } from 'express'
-import { creatingRooms, deletingRooms, getRooms, updatingRooms, getRoom } from '../controllers/rooms.controllers.js';
+import { creatingRooms, deletingRooms, getRooms, updatingRooms, getRoom } from '../../controllers/rooms.controllers.js';
 
 const router = Router()
-
 
 router.get('/rooms', getRooms );
 

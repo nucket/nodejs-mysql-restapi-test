@@ -1,15 +1,17 @@
 import express from 'express';
-import roomsRoutes from './routes/rooms.routes.js';
-import indexRoutes from './routes/index.routes.js';
-
-import { PORT } from './config.js'
+import v1roomsRoutes from './v1/routes/rooms.routes.js';
+import v1indexRoutes from './v1/routes/index.routes.js';
+import v2roomsRoutes from './v2/routes/rooms.routes.js';
+import v2indexRoutes from './v2/routes/index.routes.js';
 
 const app = express ()
 
 app.use( express.json() )
 
-app.use ( indexRoutes )
-app.use ( '/api', roomsRoutes )
+app.use ( v1indexRoutes )
+app.use ( '/api/v1', v1roomsRoutes )
+app.use ( v2indexRoutes )
+app.use ( '/api/v2', v2roomsRoutes )
 
 app.use((req, res, next) => {
 
