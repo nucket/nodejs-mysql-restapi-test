@@ -22,3 +22,5 @@ INSERT INTO rooms VALUES
  (2, 'Zona2', 2000),
  (3, 'Lavagem_Caixa', 2500),
  (4, 'Lavagem_Caixa2', 1500);
+
+

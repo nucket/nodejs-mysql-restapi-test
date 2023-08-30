@@ -89,3 +89,4 @@ export const updatingRooms = async (req, res) => {
         })
     }
 }
+

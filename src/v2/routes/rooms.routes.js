@@ -15,3 +15,5 @@ router.delete('/rooms/:id', deletingRooms );
 
 
 export default router
+
+
